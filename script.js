@@ -1,15 +1,34 @@
 const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.nav-link');
+const navLinks = document.querySelectorAll('nav a');
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            navLinks.forEach(link => link.classList.remove('active'));
-            const id = entry.target.getAttribute('id');
-            const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
-            if (activeLink) activeLink.classList.add('active');
+window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (window.scrollY >= sectionTop) {
+            current = section.getAttribute('id');
         }
     });
-}, { threshold: 0.4 });
 
-sections.forEach(section => observer.observe(section));
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+        }
+    });
+});
+
+function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('.contact-submit-btn');
+    btn.innerHTML = '<i class="fa-solid fa-check"></i> Message Sent!';
+    btn.style.background = 'rgb(217, 151, 7)';
+    btn.style.color = '#1a1a1a';
+    setTimeout(() => {
+        btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
+        btn.style.background = '';
+        btn.style.color = '';
+        e.target.reset();
+    }, 3000);
+}
