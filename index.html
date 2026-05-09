@@ -15,61 +15,61 @@
 <body>
     
     <nav>
-        <h2 class="logo">
-            <i class="fa-solid fa-code"></i>Gyan Prakash</h2>
+        <a href="#hero" class="logo-link">
+            <h2 class="logo">
+                <i class="fa-solid fa-code"></i>Gyan Prakash
+            </h2>
+        </a>
         <ul>
             <li><a href="#about"><i class="fa-solid fa-house"></i> About Me</a></li>
-            <li><a href="#skills"><i class="fa-solid fa-file-lines"></i> Resume</a></li>
+            <li><a href="#skills"><i class="fa-solid fa-file-lines"></i> Skills</a></li>
             <li><a href="#projects"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
-            <li><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Get in Touch!</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-paper-plane"></i> Get in Touch!</a></li>
         </ul>
     </nav>
 
-    <!-- Get in touch -->
+    <!-- ===== HERO SECTION ===== -->
     <section class="getInTouch" id="hero">
 
-        <h1 class="front-title">PORTFOLIO</h1>
-        <div class="text-layer">
-            <div class="bg-title">
-                <h1>PORTFOLIO</h1>
-                <h1>PORTFOLIO</h1>
-                <h1>PORTFOLIO</h1>
-            </div>
-        </div>
+    <!-- Repeating BG text -->
+    <div class="bg-title">
+        <h1>PORTFOLIO</h1>
+        <h1>PORTFOLIO</h1>
+        <h1>PORTFOLIO</h1>
+    </div>
 
-        <!-- IMAGE -->
-        <div class="hero-image">
-            <img src="profile2.png" alt="Gyan">
-        </div>
+    <!-- Photo -->
+    <div class="hero-image">
+        <img src="profile2.png" alt="Gyan">
+    </div>
 
-        <div class="hero-bottom"></div>
-            
-             <div class="contact-container">
+    <!-- PORTFOLIO overlapping the photo -->
+    <h1 class="front-title">PORTFOLIO</h1>
 
-                <a href="mailto:gyan07prakash@gmail.com" class="contact-card">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Email</span>
-                <p>gyan07prakash@gmail.com</p>
-                </a>
+    <!-- Tagline bottom-left of photo -->
+    <div class="hero-tagline">
+        <span id="typewriter"></span><span class="cursor">|</span>
+    </div>
 
-                <a href="https://www.linkedin.com/in/gyan07prakash/" target="_blank" class="contact-card">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>LinkedIn</span>
-                <p>gyan07prakash</p>
-                </a>
+    <!-- Social buttons bottom-right -->
+    <div class="contact-container">
+        <a href="mailto:gyan07prakash@gmail.com" class="contact-card">
+            <i class="fa-solid fa-envelope"></i> Email
+        </a>
+        <a href="https://www.linkedin.com/in/gyan07prakash/" target="_blank" class="contact-card">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/gyan07prakash" target="_blank" class="contact-card">
+            <i class="fa-brands fa-github"></i> GitHub
+        </a>
+    </div>
 
-                <a href="https://github.com/gyan07prakash" target="_blank" class="contact-card">
-                <i class="fa-brands fa-github"></i>
-                <span>GitHub</span>
-                <p>gyan07prakash</p>
-                </a>
-            </div>
-        </section>
+    <div class="hero-bottom"></div>
+</section>
 
-         <!-- ===== ABOUT ME SECTION ===== -->
+    <!-- ===== ABOUT ME SECTION ===== -->
     <section class="about-section" id="about">
  
-        <!-- Left: Text content -->
         <div class="about-left">
             <p class="about-hello">Hello,</p>
             <h1 class="about-name">I'm Gyan !</h1>
@@ -81,80 +81,31 @@
             </p>
  
             <div class="about-tags">
-                <div class="about-tag">
-                    <i class="fa-solid fa-layer-group"></i>
-                    <span>Full-Stack Dev</span>
-                </div>
-                <div class="about-tag">
-                    <i class="fa-solid fa-chart-bar"></i>
-                    <span>Data Analytics</span>
-                </div>
-                <div class="about-tag">
-                    <i class="fa-solid fa-database"></i>
-                    <span>Machine Learning</span>
-                </div>
-                <div class="about-tag">
-                    <i class="fa-solid fa-brain"></i>
-                    <span>Deep Learning</span>
-                </div>
+                <div class="about-tag"><i class="fa-solid fa-layer-group"></i><span>Full-Stack Dev</span></div>
+                <div class="about-tag"><i class="fa-solid fa-chart-bar"></i><span>Data Analytics</span></div>
+                <div class="about-tag"><i class="fa-solid fa-database"></i><span>Machine Learning</span></div>
+                <div class="about-tag"><i class="fa-solid fa-brain"></i><span>Deep Learning</span></div>
             </div>
- 
-            <a href="https://github.com/gyan07prakash" target="_blank" class="about-link-btn">
-                <i class="fa-brands fa-github"></i>
-                github.com/gyan07prakash
-            </a>
+
         </div>
- 
-        <!-- Right: Photo with decorations -->
+
+        <!----middle-->
+
         <div class="about-right">
- 
-            <!-- Floating pill badges -->
-            <div class="about-badge badge-dob">
-                <i class="fa-solid fa-cake-candles"></i>
-                3rd Dec 2003
-            </div>
- 
-            <div class="about-badge badge-role">
-                <i class="fa-solid fa-code"></i>
-                Developer
-            </div>
- 
-            <!-- Green block + photo -->
+            
             <div class="about-photo-wrap">
                 <div class="about-green-block"></div>
                 <img src="profile1.png" alt="Gyan Prakash" class="about-photo">
- 
-                <!-- Dark contact overlay card -->
                 <div class="about-contact-card">
                     <p class="about-contact-title">Quick Info</p>
-                    <p><i class="fa-solid fa-location-dot"></i> India</p>
-                    <p><i class="fa-solid fa-envelope"></i> gyan07prakash@gmail.com</p>
-                    <p><i class="fa-brands fa-github"></i> gyan07prakash</p>
+                    <p><i class="fa-solid fa-user"></i> Gyan Prakash</p>
+                    <p><i class="fa-solid fa-laptop-code"></i> Developer</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Patna, Bihar</p>
                 </div>
             </div>
- 
         </div>
- 
-        <!-- BG text watermark -->
-        <div class="about-bg-text">
-            <span>ABOUT</span>
-            <span>ABOUT</span>
-        </div>
-    </section>
-
-    <!-- ===== SKILLS SECTION ===== -->
-<section class="skills-section" id="skills">
-
-    <!-- BG watermark -->
-    <div class="skills-bg-text">
-        <span>SKILLS</span>
-        <span>SKILLS</span>
-        <span>SKILLS</span>
-    </div>
-
-    <div class="skills-inner">
-
-        <!-- LEFT: Education -->
+         
+<!---------right--------- -->
         <div class="education">
             <h2 class="skills-title">Education</h2>
 
@@ -170,7 +121,7 @@
                         </div>
                         <h3 class="edu-school">Kalinga Institute of Industrial Technology (KIIT)</h3>
                         <p class="edu-degree">Bachelor of Technology in Computer Science and Engineering</p>
-                        <span class="edu-grade">CGPA: 7.95</span>
+                        <span class="edu-grade">CGPA: 8.05</span>
                     </div>
                 </div>
 
@@ -203,293 +154,308 @@
 
             </div>
         </div>
+        
+    </section>
 
-        <!-- RIGHT: Technical Skills -->
-        <div class="skills-right">
-            <h2 class="skills-title">Technical Skills</h2>
+    <!-- ===== SKILL SECTION ===== -->
+    <section class="skills-section" id="skills">
 
-            <div class="skills-grid">
+        <div class="skills-bg-text">
+            <span>ARSENAL</span>
+            <span>ARSENAL</span>
+        </div>
 
-                <div class="skill-group">
-                    <h4 class="skill-group-title"><i class="fa-solid fa-layer-group"></i> Full Stack</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Flask</span>
-                        <span class="skill-tag">FastAPI</span>
-                        <span class="skill-tag">Django</span>
+        <div class="skills-inner">
+            
+
+            <!-- RIGHT: Technical Skills -->
+            <div class="skills-right">
+    <h2 class="skills-title">Technical Skills</h2>
+    <p class="skills-subtitle">Technologies I work with</p>
+
+    <div class="skills-grid">
+
+        <!-- Full Stack -->
+        <div class="skill-group">
+            <div class="skill-group-header">
+                <div class="skill-group-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <span class="skill-group-title">Full Stack</span>
+            </div>
+            <div class="skill-tags">
+                <span class="skill-tag"><i class="fa-brands fa-html5" style="color:#e34f26"></i> HTML</span>
+                <span class="skill-tag"><i class="fa-brands fa-css3-alt" style="color:#1572b6"></i> CSS</span>
+                <span class="skill-tag"><i class="fa-brands fa-js" style="color:#f7df1e"></i> JavaScript</span>
+                <span class="skill-tag"><i class="fa-brands fa-react" style="color:#61dafb"></i> React</span>
+                <span class="skill-tag"><i class="fa-brands fa-python" style="color:#3776ab"></i> Flask</span>
+                <span class="skill-tag"><i class="fa-brands fa-python" style="color:#3776ab"></i> FastAPI</span>
+                <span class="skill-tag"><i class="fa-brands fa-python" style="color:#3776ab"></i> Django</span>
+            </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-group">
+            <div class="skill-group-header">
+                <div class="skill-group-icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <span class="skill-group-title">Database</span>
+            </div>
+            <div class="skill-tags">
+                <span class="skill-tag"><i class="fa-solid fa-database" style="color:#00758f"></i> MySQL</span>
+                <span class="skill-tag"><i class="fa-solid fa-leaf" style="color:#47a248"></i> MongoDB</span>
+            </div>
+        </div>
+
+        <!-- AI / ML -->
+        <div class="skill-group">
+            <div class="skill-group-header">
+                <div class="skill-group-icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <span class="skill-group-title">AI / ML</span>
+            </div>
+            <div class="skill-tags">
+                <span class="skill-tag"><i class="fa-brands fa-python" style="color:#3776ab"></i> Python</span>
+                <span class="skill-tag"><i class="fa-solid fa-square-root-variable" style="color:#4dabcf"></i> NumPy</span>
+                <span class="skill-tag"><i class="fa-solid fa-table" style="color:#150458"></i> Pandas</span>
+                <span class="skill-tag"><i class="fa-solid fa-diagram-project" style="color:#f7931e"></i> Scikit-learn</span>
+                <span class="skill-tag"><i class="fa-solid fa-fire" style="color:#ff6f00"></i> TensorFlow</span>
+                <span class="skill-tag"><i class="fa-solid fa-fire-flame-curved" style="color:#ee4c2c"></i> PyTorch</span>
+            </div>
+        </div>
+
+    </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="projects-section" id="projects">
+
+        <div class="projects-bg-text">
+            <span>PROJECTS</span>
+            <span>PROJECTS</span>
+        </div>
+
+        <div class="projects-inner">
+            <h2 class="projects-title">Latest Projects</h2>
+
+            <div class="projects-grid">
+
+                <!-- 1. Flash Filter -->
+                <div class="project-card">
+                    <div class="project-img-wrap">
+                        <img src="flashfilter.png" alt="Flash Filter">
+                        <div class="project-overlay">
+                            <a href="https://github.com/gyan07prakash" target="_blank" class="project-btn">
+                                <i class="fa-brands fa-github"></i> View GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-header">
+                            <h3 class="project-name">Flash Filter</h3>
+                            <span class="project-category">NLP · Resume Parser</span>
+                        </div>
+                        <p class="project-desc">An intelligent resume parser that extracts and filters key candidate information using Natural Language Processing to streamline recruitment workflows.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>NLP</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-group">
-                    <h4 class="skill-group-title"><i class="fa-solid fa-database"></i> Database</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">MongoDB</span>
+                <!-- 2. NexSlot -->
+                <div class="project-card">
+                    <div class="project-img-wrap">
+                        <img src="nexslot.png" alt="NexSlot">
+                        <div class="project-overlay">
+                            <a href="https://github.com/gyan07prakash" target="_blank" class="project-btn">
+                                <i class="fa-brands fa-github"></i> View GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-header">
+                            <h3 class="project-name">NexSlot</h3>
+                            <span class="project-category">Full Stack · AI Booking</span>
+                        </div>
+                        <p class="project-desc">Real-time facility booking platform featuring an AI-driven "Chat-to-Book" experience — users describe what they need and the system books it instantly.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>SQL</span>
+                            <span>REST API</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-group">
-                    <h4 class="skill-group-title"><i class="fa-solid fa-brain"></i> AI / ML</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">Scikit-learn</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">PyTorch</span>
+                <!-- 3. AirBNB Analysis -->
+                <div class="project-card">
+                    <div class="project-img-wrap">
+                        <img src="airbnb.png" alt="AirBNB Analysis">
+                        <div class="project-overlay">
+                            <a href="https://public.tableau.com/app/profile/gyan.prakash5857/viz/AirBNBData_17459260778380/Dashboard1" target="_blank" class="project-btn">
+                                <i class="fa-solid fa-chart-bar"></i> Live Dashboard
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-header">
+                            <h3 class="project-name">AirBNB Analysis</h3>
+                            <span class="project-category">Data Analytics · Tableau</span>
+                        </div>
+                        <p class="project-desc">A data-driven Tableau dashboard uncovering pricing trends, demand patterns, and key insights from Airbnb listings to support smarter decision-making.</p>
+                        <div class="project-tags">
+                            <span>Tableau</span>
+                            <span>Data Analytics</span>
+                            <span>EDA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Face Track -->
+                <div class="project-card">
+                    <div class="project-img-wrap">
+                        <img src="facetrack.png" alt="FaceTrack">
+                        <div class="project-overlay">
+                            <a href="https://github.com/gyan07prakash/FaceTrack-Attendance-System" target="_blank" class="project-btn">
+                                <i class="fa-brands fa-github"></i> View GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-header">
+                            <h3 class="project-name">Face Track</h3>
+                            <span class="project-category">AI · Attendance System</span>
+                        </div>
+                        <p class="project-desc">An AI-powered attendance system using real-time face recognition to automatically track check-in, check-out, and total working hours.</p>
+                        <div class="project-tags">
+                            <span>OpenCV</span>
+                            <span>Python</span>
+                            <span>LBPH</span>
+                            <span>Flask</span>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </div>
+    </section>
 
-    </div>
-</section>
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact-section" id="contact">
 
-<section class="projects-section" id="projects">\
+        <div class="contact-bg-text">
+            <span>CONTACT</span>
+            <span>CONTACT</span>
+        </div>
 
-    <div class="projects-bg-text">
-        <span>PROJECTS</span>
-        <span>PROJECTS</span>
-    </div>
+        <div class="contact-inner">
 
-    <div class="projects-inner">
-    <h2 class="projects-title">Latest Projects</h2>
+            <!-- LEFT: Form -->
+            <div class="contact-left">
+                <p class="contact-eyebrow">Let's Talk</p>
+                <h2 class="contact-title">Get In Touch</h2>
+                <p class="contact-subtitle">Have a project in mind or just want to say hi? Drop a message and I'll get back to you!</p>
 
-    <div class="projects-grid">
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-user"></i> Your Name</label>
+                        <input type="text" name="name" placeholder="John Doe" required />
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-envelope"></i> Your Email</label>
+                        <input type="email" name="email" placeholder="john@example.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-pen"></i> Your Message</label>
+                        <textarea name="message" rows="5" placeholder="Hey Gyan, I'd love to collaborate on..." required></textarea>
+                    </div>
+                    <button type="submit" class="contact-submit-btn">
+                        <i class="fa-solid fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
 
-        <!-- 1. Flash Filter -->
-        <div class="project-card">
-            <div class="project-img-wrap">
-                <img src="flashfilter.png" alt="Flash Filter">
-                <div class="project-overlay">
-                    <a href="https://github.com/gyan07prakash" target="_blank" class="project-btn">
-                        <i class="fa-brands fa-github"></i> View GitHub
+            <!-- RIGHT: Socials -->
+            <div class="contact-right">
+                <p class="contact-eyebrow">Find Me On</p>
+                <h2 class="contact-title">Socials</h2>
+                <p class="contact-subtitle">Always open to new connections, collaborations, and conversations.</p>
+
+                <div class="socials-list">
+
+                    <a href="mailto:gyan07prakash@gmail.com" class="social-card" id="social-email">
+                        <div class="social-icon-wrap"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="social-info">
+                            <span class="social-name">Email</span>
+                            <span class="social-handle">gyan07prakash@gmail.com</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
                     </a>
-                </div>
-            </div>
-            <div class="project-body">
-                <div class="project-header">
-                    <h3 class="project-name">Flash Filter</h3>
-                    <span class="project-category">NLP · Resume Parser</span>
-                </div>
-                <p class="project-desc">An intelligent resume parser that extracts and filters key candidate information using Natural Language Processing to streamline recruitment workflows.</p>
-                <div class="project-tags">
-                    <span>Python</span>
-                    <span>Flask</span>
-                    <span>NLP</span>
-                </div>
-            </div>
-        </div>
 
-        <!-- 2. NexSlot -->
-        <div class="project-card">
-            <div class="project-img-wrap">
-                <img src="nexslot.png" alt="NexSlot">
-                <div class="project-overlay">
-                    <a href="https://github.com/gyan07prakash" target="_blank" class="project-btn">
-                        <i class="fa-brands fa-github"></i> View GitHub
+                    <a href="https://www.linkedin.com/in/gyan07prakash/" target="_blank" class="social-card" id="social-linkedin">
+                        <div class="social-icon-wrap"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div class="social-info">
+                            <span class="social-name">LinkedIn</span>
+                            <span class="social-handle">gyan07prakash</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
                     </a>
-                </div>
-            </div>
-            <div class="project-body">
-                <div class="project-header">
-                    <h3 class="project-name">NexSlot</h3>
-                    <span class="project-category">Full Stack · AI Booking</span>
-                </div>
-                <p class="project-desc">Real-time facility booking platform featuring an AI-driven "Chat-to-Book" experience — users describe what they need and the system books it instantly.</p>
-                <div class="project-tags">
-                    <span>React</span>
-                    <span>Node.js</span>
-                    <span>SQL</span>
-                    <span>REST API</span>
-                </div>
-            </div>
-        </div>
 
-        <!-- 3. AirBNB Analysis -->
-        <div class="project-card">
-            <div class="project-img-wrap">
-                <img src="airbnb.png" alt="AirBNB Analysis">
-                <div class="project-overlay">
-                    <a href="https://public.tableau.com/app/profile/gyan.prakash5857/viz/AirBNBData_17459260778380/Dashboard1" target="_blank" class="project-btn">
-                        <i class="fa-solid fa-chart-bar"></i> Live Dashboard
+                    <a href="https://github.com/gyan07prakash" target="_blank" class="social-card" id="social-github">
+                        <div class="social-icon-wrap"><i class="fa-brands fa-github"></i></div>
+                        <div class="social-info">
+                            <span class="social-name">GitHub</span>
+                            <span class="social-handle">gyan07prakash</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
                     </a>
-                </div>
-            </div>
-            <div class="project-body">
-                <div class="project-header">
-                    <h3 class="project-name">AirBNB Analysis</h3>
-                    <span class="project-category">Data Analytics · Tableau</span>
-                </div>
-                <p class="project-desc">A data-driven Tableau dashboard uncovering pricing trends, demand patterns, and key insights from Airbnb listings to support smarter decision-making.</p>
-                <div class="project-tags">
-                    <span>Tableau</span>
-                    <span>Data Analytics</span>
-                    <span>EDA</span>
-                </div>
-            </div>
-        </div>
 
-        <!-- 4. Face Track -->
-        <div class="project-card">
-            <div class="project-img-wrap">
-                <div class="project-img-placeholder">
-                    <img src="facetrack.png" alt="FaceTrack">
-                </div>
-                <div class="project-overlay">
-                    <a href="https://github.com/gyan07prakash/FaceTrack-Attendance-System" target="_blank" class="project-btn">
-                        <i class="fa-brands fa-github"></i> View GitHub
+                    <a href="https://www.instagram.com/gyan.prakash.7/" target="_blank" class="social-card" id="social-instagram">
+                        <div class="social-icon-wrap"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="social-info">
+                            <span class="social-name">Instagram</span>
+                            <span class="social-handle">gyan07prakash</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
                     </a>
+
+                    <a href="https://medium.com/@gyan07prakash" target="_blank" class="social-card" id="social-medium">
+                        <div class="social-icon-wrap"><i class="fa-brands fa-medium"></i></div>
+                        <div class="social-info">
+                            <span class="social-name">Medium</span>
+                            <span class="social-handle">@gyan07prakash</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+                    </a>
+
                 </div>
             </div>
-            <div class="project-body">
-                <div class="project-header">
-                    <h3 class="project-name">Face Track</h3>
-                    <span class="project-category">AI · Attendance System</span>
-                </div>
-                <p class="project-desc">An AI-powered attendance system using real-time face recognition to automatically track check-in, check-out, and total working hours.</p>
-                <div class="project-tags">
-                    <span>OpenCV</span>
-                    <span>Python</span>
-                    <span>LBPH</span>
-                    <span>Flask</span>
-                </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-quote">"Always learning, always building."</p>
+            <p class="footer-name">Gyan Prakash</p>
+            <p class="footer-credits">Built with HTML, CSS & JavaScript</p>
+            <div class="footer-socials">
+                <a href="mailto:gyan07prakash@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/gyan07prakash" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gyan07prakash/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/gyan.prakash.7/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://medium.com/@gyan07prakash" target="_blank" title="Medium"><i class="fa-brands fa-medium"></i></a>
             </div>
+            <p class="footer-copy">© 2026 Gyan Prakash. All rights reserved.</p>
         </div>
+    </footer>
 
-    </div>
-</div>
-</section>
-
-<!-- ===== CONTACT SECTION ===== -->
-<section class="contact-section" id="contact">
-
-    <div class="contact-bg-text">
-        <span>CONTACT</span>
-        <span>CONTACT</span>
-    </div>
-
-    <div class="contact-inner">
-
-        <!-- LEFT: Form -->
-        <div class="contact-left">
-            <p class="contact-eyebrow">Let's Talk</p>
-            <h2 class="contact-title">Get In Touch</h2>
-            <p class="contact-subtitle">Have a project in mind or just want to say hi? Drop a message and I'll get back to you!</p>
-
-            <form class="contact-form" onsubmit="handleSubmit(event)">
-                <div class="form-group">
-                    <label><i class="fa-solid fa-user"></i> Your Name</label>
-                    <input type="text" placeholder="John Doe" required />
-                </div>
-                <div class="form-group">
-                    <label><i class="fa-solid fa-envelope"></i> Your Email</label>
-                    <input type="email" placeholder="john@example.com" required />
-                </div>
-                <div class="form-group">
-                    <label><i class="fa-solid fa-pen"></i> Your Message</label>
-                    <textarea rows="5" placeholder="Hey Gyan, I'd love to collaborate on..." required></textarea>
-                </div>
-                <button type="submit" class="contact-submit-btn">
-                    <i class="fa-solid fa-paper-plane"></i> Send Message
-                </button>
-            </form>
-        </div>
-
-        <!-- RIGHT: Socials -->
-        <div class="contact-right">
-            <p class="contact-eyebrow">Find Me On</p>
-            <h2 class="contact-title">Socials</h2>
-            <p class="contact-subtitle">Always open to new connections, collaborations, and conversations.</p>
-
-            <div class="socials-list">
-
-                <a href="mailto:gyan07prakash@gmail.com" class="social-card" id="social-email">
-                    <div class="social-icon-wrap">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <div class="social-info">
-                        <span class="social-name">Email</span>
-                        <span class="social-handle">gyan07prakash@gmail.com</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/gyan07prakash/" target="_blank" class="social-card" id="social-linkedin">
-                    <div class="social-icon-wrap">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
-                    <div class="social-info">
-                        <span class="social-name">LinkedIn</span>
-                        <span class="social-handle">gyan07prakash</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
-                </a>
-
-                <a href="https://github.com/gyan07prakash" target="_blank" class="social-card" id="social-github">
-                    <div class="social-icon-wrap">
-                        <i class="fa-brands fa-github"></i>
-                    </div>
-                    <div class="social-info">
-                        <span class="social-name">GitHub</span>
-                        <span class="social-handle">gyan07prakash</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
-                </a>
-
-                <a href="https://www.instagram.com/gyan.prakash.7/" target="_blank" class="social-card" id="social-instagram">
-                    <div class="social-icon-wrap">
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    <div class="social-info">
-                        <span class="social-name">Instagram</span>
-                        <span class="social-handle">gyan07prakash</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
-                </a>
-
-                <a href="https://medium.com/@gyan07prakash" target="_blank" class="social-card" id="social-medium">
-                    <div class="social-icon-wrap">
-                        <i class="fa-brands fa-medium"></i>
-                    </div>
-                    <div class="social-info">
-                        <span class="social-name">Medium</span>
-                        <span class="social-handle">@gyan07prakash</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
-                </a>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<footer class="footer">
-    <div class="footer-content">
-
-        <p class="footer-name">Gyan Prakash</p>
-
-        <p class="footer-credits">
-            Built with HTML, CSS & JavaScript
-        </p>
-
-        <div class="footer-socials">
-            <a href="mailto:gyan07prakash@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://github.com/gyan07prakash" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/gyan07prakash/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-
-        <p class="footer-copy">
-            © 2026 Gyan Prakash. All rights reserved.
-        </p>
-
-    </div>
-</footer>
     <script src="script.js"></script>
     
 </body>
